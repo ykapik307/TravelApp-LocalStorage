@@ -1,0 +1,22 @@
+.modal{
+    position: fixed;
+    left: 0;
+    top:0;
+    height: 100%;          /*The first five line say to start the modal from top left corner and cover the entire screen*/
+    width: 100%;
+    z-index: 1;             /* Makes the modal appear over the Game Screen*/
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.modal-content{
+    background: #fff;
+    margin:10% auto;       /*Takes 10% margin from top and bottom and as left and right is set to auto it centers the div int container*/
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
